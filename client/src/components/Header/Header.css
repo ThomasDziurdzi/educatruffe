@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  margin: 3rem 1rem 4rem;
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 0.5rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5rem;
+      font-family: var(--font-title);
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  header .header__logo {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  header {
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .header__logo {
+      margin: 0 4rem 0 2rem;
+    }
+  }
+}

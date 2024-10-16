@@ -1,0 +1,44 @@
+.pageNotFound {
+  margin: 7rem 2rem;
+  .pageNotFound__container {
+    display: flex;
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pageNotFound__text {
+      max-width: 65vw;
+
+      h1 {
+        margin: 3rem;
+        font-size: 5rem;
+        color: var(--col-dark-green);
+        button {
+          border: none;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        margin: 3rem;
+      }
+    }
+    .pageNotFound__img {
+      background-image: url(../../assets/images/Vector.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      max-width: 500px;
+      width: 30vw;
+      .flair__mask {
+        max-width: 30vw;
+        max-height: 500px;
+      }
+
+      .flair__os {
+        border: none;
+      }
+    }
+  }
+}

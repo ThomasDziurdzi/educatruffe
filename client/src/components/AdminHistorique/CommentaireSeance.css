@@ -1,0 +1,63 @@
+/* Formulaire de modification */
+.historique__edit {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.historique__edit label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.historique__edit input[type="text"],
+.historique__edit textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Boutons */
+.btn__save,
+.btn__close,
+.btn__edit,
+.btn__delete {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn__edit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn__save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn__close {
+  background-color: #d31b1b;
+  color: white;
+}
+
+.btn__save,
+.btn__edit:hover {
+  background-color: #43a047;
+}

@@ -1,0 +1,49 @@
+#admin__newsletter__global {
+  margin: 4rem 2rem;
+
+  h2 {
+    font-size: 20px;
+    margin: 1.2rem 0rem;
+  }
+
+  .admin__newsletter__listing {
+    border: 1px solid black;
+    max-height: 20vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    ul {
+      li {
+        margin: 5px 0px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+      }
+
+      li:hover {
+        background-color: #eaeaea;
+      }
+    }
+  }
+
+  .admin__newsletter__contenu {
+    .admin__textNews {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+
+  .admin__newsletter__button {
+    input {
+      background-color: var(--col-purple);
+      font-size: 1.3rem;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      margin: 2rem 0rem;
+      padding: 5px 11px;
+    }
+  }
+}

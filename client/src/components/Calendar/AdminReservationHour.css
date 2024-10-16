@@ -1,0 +1,45 @@
+.hour {
+  @media (max-width: 640px) {
+    width: 4.5rem;
+    margin: 0.35rem auto;
+  }
+  .anchor--admin {
+    anchor-name: --hour-admin;
+  }
+  .hour__button {
+    border-radius: 5px;
+    border: 1px solid var(--col-dark-gray);
+    background-color: white;
+    width: 100%;
+    height: 1.5rem;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+  .hour__button:hover {
+    border: 2px solid var(--col-purple);
+    font-weight: 800;
+    cursor: pointer;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+  .hour__button:active {
+    background-color: var(--col-light-green);
+    color: aqua;
+  }
+
+  .hour__gray {
+    background-color: var(--col-dark-gray);
+    border-radius: 5px;
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hour__gray:hover {
+    cursor: not-allowed;
+  }
+  .selected {
+    background-color: var(--col-light-green);
+  }
+}

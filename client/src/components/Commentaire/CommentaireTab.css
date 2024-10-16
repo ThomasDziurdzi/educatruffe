@@ -1,0 +1,52 @@
+.commentaire-tab {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .commentaire__name {
+    font-weight: bold;
+  }
+
+  .commentaire__text {
+    width: 20vw;
+  }
+
+  .star {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-block;
+  }
+
+  .star.filled {
+    color: rgb(131, 126, 191);
+  }
+  .comment-actions {
+    .btnDelete,
+    .btnAnnuler,
+    .btnValidate {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      background-color: green;
+      color: #ddd;
+      height: 2.5vh;
+    }
+
+    .btnAnnuler {
+      background-color: rgb(131, 126, 191);
+    }
+
+    .btnDelete {
+      background-color: rgb(107, 4, 4);
+    }
+  }
+}

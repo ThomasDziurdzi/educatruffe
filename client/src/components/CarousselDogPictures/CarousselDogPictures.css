@@ -1,0 +1,32 @@
+.caroussel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+
+  max-width: 1900px;
+
+  .caroussel__container {
+    margin-top: 6rem;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    img {
+      z-index: 2;
+
+      max-width: 20vw;
+      height: auto;
+    }
+  }
+  /* .purpleStroke {
+    z-index: 1;
+    position: absolute;
+    top: -20em;
+    left: -25rem;
+    } */
+  @media (width <=640px) {
+    display: none;
+  }
+}

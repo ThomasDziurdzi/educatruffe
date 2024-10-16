@@ -1,0 +1,137 @@
+.avis {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70vw;
+  margin-top: 13rem;
+
+  .avis__title {
+    color: var(--col-dark-green);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .avis__paragraph {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .avis__star1 {
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 3rem;
+  }
+
+  .avis__article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    background-color: rgb(222, 220, 249);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+    margin: auto;
+    gap: 4rem;
+
+    .avis__describe {
+      padding: 2rem 4rem 2rem 0;
+      text-align: left;
+
+      .avis__star {
+        font-size: 2rem;
+        color: rgb(131, 126, 191);
+        display: inline-block;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .avis__describe--p {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+      }
+      .avis__describe--h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .avis__star2--div {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .avis__zigzag--div {
+    text-align: right;
+    margin-right: 3rem;
+
+    .avis__zigzag {
+      width: 200px;
+    }
+  }
+
+  .avis__button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+
+    /* @media (max-width: 640px) {
+      display: none;
+    } */
+  }
+
+  @media (max-width: 1280px) {
+    .avis__article {
+      flex-direction: column;
+      width: 500px;
+
+      .avis__photo {
+        .avis__dog4 {
+          width: 90%;
+        }
+      }
+
+      .avis__describe {
+        width: 85%;
+        padding: 0 20px;
+        text-align: center;
+
+        .avis__describe--h2 {
+          text-align: center;
+          margin-top: -4rem;
+          font-size: 1.5rem;
+        }
+        .avis__star {
+          text-align: center;
+        }
+        .avis__describe--p {
+          text-align: left;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .avis__star2,
+    .avis__zigzag {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .avis__article {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+
+      .avis__photo {
+        .avis__dog4 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

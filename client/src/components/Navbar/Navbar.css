@@ -1,0 +1,211 @@
+.navbar {
+  z-index: 10;
+  .not-mobile {
+    display: none;
+  }
+  .navbar__burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    .navbar__burger-bar {
+      display: block;
+      background-color: black;
+      height: 3px;
+      width: 100%;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+
+    &.open {
+      .navbar__burger-bar:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 13px;
+      }
+
+      .navbar__burger-bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      .navbar__burger-bar:nth-child(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 13px;
+      }
+    }
+  }
+
+  .overlay-nav__container {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    height: 100vh;
+    background: white;
+
+    .overlay-nav__button {
+      font-size: 2rem;
+      height: 2.5rem;
+      color: var(--col-light-gray);
+      background-color: var(--col-purple);
+      font-weight: bold;
+      font-family: var(--font-title);
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      margin-left: 1rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .overlay-nav__list {
+      margin-left: 1rem;
+
+      .overlay-nav__list-item {
+        margin: 2rem 0 3rem;
+        font-size: 2.3rem;
+
+        .overlay-nav__submenu {
+          margin-top: 1rem;
+          font-size: 2rem;
+          color: var(--col-dark-green);
+
+          .overlay-nav__submenu-item {
+            padding: 0.4rem 0;
+          }
+
+          .overlay-nav__submenu-border {
+            width: 50%;
+            margin: 20px 5px 10px;
+            border: 1px solid #cbcbcb;
+          }
+        }
+      }
+    }
+    li {
+      font-family: var(--font-title);
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .classic-nav,
+  .classic-nav__button {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .overlay-nav__container,
+  .navbar__burger-btn {
+    display: none;
+  }
+
+  .classic-nav__item:hover .classic-nav__submenu {
+    display: block;
+  }
+
+  li {
+    font-family: var(--font-title);
+
+    &:hover {
+      color: var(--col-purple);
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .classic-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    border-left: 2px var(--col-dark-gray) solid;
+    width: 55%;
+    padding: 0 3rem;
+    list-style: none;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+
+    .classic-nav__item {
+      position: relative;
+      padding: 15px 0;
+      cursor: pointer;
+
+      img {
+        margin-bottom: -8px;
+        margin-left: 1rem;
+      }
+
+      .classic-nav__submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: white;
+        border: 2px solid #020000;
+        border-radius: 10px;
+        padding: 10px;
+        list-style: none;
+        min-width: 200px;
+
+        .classic-nav__submenu-item {
+          padding: 10px;
+          cursor: pointer;
+
+          color: initial;
+
+          &:hover {
+            color: var(--col-purple);
+          }
+        }
+
+        .classic-nav__submenu-border {
+          width: 100%;
+          margin: 10px 0;
+          border: 1px solid #cbcbcb;
+        }
+      }
+    }
+    .classic-nav__item:hover .classic-nav__submenu {
+      display: block;
+    }
+  }
+
+  .classic-nav__button {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    color: var(--col-light-gray);
+    background-color: var(--col-purple);
+    font-weight: bold;
+    font-family: var(--font-title);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 4rem;
+    cursor: pointer;
+    border: none;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

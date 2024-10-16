@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("../../assets/images/paw.png");
+  .home__container {
+    /* overflow-x: hidden; */
+    padding: 8rem;
+    /* background-color: var(--col-light-gray); */
+    background-repeat: repeat;
+    position: relative;
+
+    .maFaconDeTravailler__container {
+      z-index: 2;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    @media (width <=640px) {
+      padding: 5vw 0;
+      /* visibility: hidden; */
+    }
+  }
+}

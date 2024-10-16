@@ -1,0 +1,69 @@
+.dogCard__Section {
+  display: flex;
+  margin: 5rem 3rem;
+  gap: 1rem;
+
+  .dogCard__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 250px;
+    height: 257px;
+    box-shadow: 13px 13px 15px rgb(31, 32, 42, 30%);
+    border: 1px solid var(--col-dark-gray);
+    border-radius: 1rem;
+    gap: 1rem;
+
+    anchor-name: --add-anchor;
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .dogCard__footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 1rem;
+      flex-grow: 1;
+
+      .dogCard__edit-button {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .addsvg {
+    position-anchor: --add-anchor;
+    position: absolute;
+    bottom: calc(anchor(top) - 10rem);
+    right: calc(anchor(right) - 7rem);
+    cursor: pointer;
+  }
+}
+
+.dogCard__container:hover {
+  outline: 1px solid black;
+}
+
+@media (max-width: 920px) {
+  .dogCard__Section {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem;
+    min-height: 50vh;
+    /* padding-bottom: 5rem; */
+
+    .dogCard__container {
+      anchor-name: --add-anchor;
+    }
+    .addsvg {
+      position-anchor: --add-anchor;
+      position: absolute;
+      left: calc(anchor(left) + 7rem);
+      bottom: calc(anchor(bottom) - 5rem);
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.services__container {
+  margin: 4rem 2rem;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .services__tableContainer {
+    height: 30vh;
+    overflow-y: auto;
+
+    .services__table {
+      /* overflow-y: auto; 
+      border-radius: 1rem;
+      width: 99%;
+      margin-top: 20px; */
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .services__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        padding: 5px 0;
+        text-align: left;
+
+        th {
+          flex: 1;
+          padding: 6px;
+          font-size: 16px;
+        }
+      }
+
+      .services__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+
+        td {
+          flex: 1;
+          padding: 6px;
+          font-size: 16px;
+        }
+
+        img {
+          width: 40%;
+          height: 40%;
+        }
+      }
+
+      .btn__edit,
+      .btn__delete {
+        padding: 5px 8px;
+        margin: 2px;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 80%;
+      }
+
+      .btn__edit {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .btn__delete {
+        background-color: #f44336;
+        color: white;
+      }
+    }
+  }
+
+  .services__edit {
+    .services__editTable {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .services__editheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        padding: 5px 0;
+        text-align: left;
+
+        th {
+          flex: 1;
+          padding: 6px;
+          font-size: 1rem;
+        }
+      }
+
+      .services__editRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+
+        .services__editRow textarea {
+          resize: vertical;
+        }
+
+        td {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          padding: 6px;
+          font-size: 14px;
+
+          input {
+            width: 80%;
+          }
+        }
+      }
+
+      .btn__save,
+      .btn__cancel {
+        padding: 5px 8px;
+        margin: 2px;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 90%;
+      }
+
+      .btn__save {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .btn__cancel {
+        background-color: #f44336;
+        color: white;
+      }
+    }
+  }
+}

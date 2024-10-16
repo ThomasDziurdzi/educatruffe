@@ -1,0 +1,77 @@
+.super__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 20vw;
+  /* position: relative;
+    width: 100%; */
+
+  .star1 {
+    padding-right: 15rem;
+    /* padding-top: 3rem; */
+  }
+
+  .image__nosework__green {
+    width: 100%;
+  }
+
+  .star2 {
+    padding-left: 15rem;
+  }
+  .training__container {
+    background-image: url("../../assets/images/blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 30vw; */
+    width: 90vw;
+    /* height: 50vh; */
+
+    .training__image--comportement {
+      padding-top: 10%;
+      padding-right: 10%;
+      /* width: 80%;
+      height: 80%; */
+      width: 50%;
+
+      /* height: 70%; */
+      object-fit: contain;
+      /* @media (width<=1440px) {
+        width: 30vw;
+        height: 35vh;
+      } */
+      /* padding: 10vw; */
+
+      /* max-height: 40%; */
+    }
+
+    .training__image--mantrailing {
+      padding: 25%;
+      width: 50%;
+      /* height: 50%; */
+      /* width: 15vw; */
+      /* height: 25vh; */
+      /* height: auto; */
+      /* max-height: 40%; */
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .star1 {
+    display: none;
+  }
+
+  .star2 {
+    display: none;
+  }
+
+  .super__image {
+    width: 70vw;
+  }
+}

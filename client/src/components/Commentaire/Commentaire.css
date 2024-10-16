@@ -1,0 +1,46 @@
+.commentaire__container {
+  margin: 4rem 2rem;
+
+  .commentaire__titre {
+    font-size: 20px;
+  }
+
+  .container__commentaire {
+    border-radius: 6px;
+    height: 34vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .commentaire-tab-container {
+      cursor: pointer;
+    }
+
+    .commentaire-tab:hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  .commentaire__detail {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+  }
+
+  .selected-comment {
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+}

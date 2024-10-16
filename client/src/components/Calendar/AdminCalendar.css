@@ -1,0 +1,150 @@
+.adminCalendar__container {
+  margin: 4rem 2%;
+  width: 96%;
+  height: 75%;
+
+  @media (max-width: 1280px) {
+    margin-left: 2rem;
+  }
+  .blue {
+    background-color: rgb(123, 158, 255);
+  }
+  .green {
+    background-color: rgb(138, 255, 123);
+  }
+  .pink {
+    background-color: rgb(241, 134, 255);
+  }
+  .brown {
+    background-color: rgb(143, 93, 0);
+  }
+  .yellow {
+    background-color: rgb(255, 234, 42);
+  }
+  .black {
+    background-color: black;
+    color: white;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+  }
+
+  .adminCalendar__title {
+    @media (max-width: 1280px) {
+      margin-bottom: 1rem;
+      margin: -1rem 1rem 1rem 1rem;
+    }
+  }
+  .adminCalendar__chevron {
+    height: 5rem;
+    background-color: white;
+    border: none;
+    width: 2%;
+    margin-top: 2.5rem;
+  }
+
+  .adminCalendar__chevron--left:hover {
+    cursor: pointer;
+    animation-name: right-left;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .adminCalendar__chevron--right:hover {
+    cursor: pointer;
+    animation-name: left-right;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  h2 {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .adminCalendar__form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    height: 80%;
+    /* flex-direction: column; */
+  }
+
+  .adminCalendar__days {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 110%;
+    width: 100%;
+
+    .reservation__week {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (max-width: 640px) {
+      flex-direction: column;
+
+      /* margin-bottom: 100rem; */
+    }
+
+    .adminCalendar__liste {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      width: 75%;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+    .adminCalendar__buttons {
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        background-color: var(--col-purple);
+        border: 0;
+        color: white;
+        border-radius: 6px;
+        padding: 10px;
+
+        .selected {
+          background-color: var(--col-light-green);
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--col-purple-hover);
+        }
+        &:active {
+          color: rgb(0, 0, 0);
+        }
+      }
+
+      .btn__delete {
+        background-color: #f44336;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(165, 30, 30);
+        }
+      }
+
+      .btn__validate {
+        background-color: #4caf50;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(47, 156, 47);
+        }
+      }
+    }
+  }
+}

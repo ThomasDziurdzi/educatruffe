@@ -1,0 +1,64 @@
+.add-service__container {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .add-service__form {
+    .add-service__table {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .addServices__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        padding: 5px 0;
+        text-align: left;
+
+        th {
+          flex: 1;
+          padding: 6px;
+          font-size: 1rem;
+        }
+      }
+
+      .addServices__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+
+        td {
+          flex: 1;
+          padding: 6px;
+          font-size: 14px;
+
+          input {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .btn__add-service {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 1rem 0rem;
+    }
+  }
+}

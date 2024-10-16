@@ -1,0 +1,21 @@
+.scrollToTop__button {
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  z-index: 50;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  @media (width <=1024px) {
+    height: 3.12rem;
+    width: 3.12rem;
+  }
+
+  @media (width <=640px) {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}

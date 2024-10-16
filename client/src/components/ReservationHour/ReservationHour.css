@@ -1,0 +1,54 @@
+.hour {
+  @media (max-width: 640px) {
+    width: 4.5rem;
+    margin: 0.35rem auto;
+  }
+  .blue {
+    background-color: rgb(123, 158, 255);
+  }
+  .green {
+    background-color: rgb(138, 255, 123);
+  }
+  .pink {
+    background-color: rgb(241, 134, 255);
+  }
+  .brown {
+    background-color: rgb(143, 93, 0);
+  }
+  .yellow {
+    background-color: rgb(255, 234, 42);
+  }
+  .hour__button {
+    border-radius: 5px;
+    border: 1px solid var(--col-dark-gray);
+    background-color: white;
+    width: 100%;
+    height: 1.5rem;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .hour__button:hover {
+    border: 2px solid var(--col-purple);
+    font-weight: 800;
+    cursor: pointer;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .hour__gray {
+    background-color: var(--col-dark-gray);
+    border-radius: 5px;
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hour__gray:hover {
+    cursor: not-allowed;
+  }
+  .anchor {
+    anchor-name: --hour;
+  }
+}

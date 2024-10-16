@@ -1,0 +1,81 @@
+.form__container {
+  width: 100%;
+  margin-left: 5vw;
+
+  p {
+    margin: 2rem 0 0 4rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .contact__form {
+    margin: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+
+    .contact__name {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .contact__form-input {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+
+      .contact__input {
+        height: 50px;
+        font-size: 20px;
+        padding-left: 0.5rem;
+        background-color: #fafafa;
+        border: 1px var(--col-dark-gray) solid;
+        border-radius: 5px;
+      }
+
+      .message {
+        height: 160px;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+  .reservationButton {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .form__container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  .form__container {
+    p {
+      margin: 2rem 0 4rem 1.5rem;
+      line-height: 1.4;
+    }
+
+    .contact__form {
+      margin: 1.5rem;
+
+      .contact__name {
+        flex-direction: column;
+      }
+      .contact__form-input {
+        .message {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rem 5rem;
+
+  @media (max-width: 640px) {
+    margin: 10rem 0;
+  }
+
+  .about__img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 650px;
+    width: 490px;
+    anchor-name: --coeur-anchor;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    .camille {
+      height: 450px;
+      width: 300px;
+      border-radius: 1rem;
+      anchor-name: --circle-anchor;
+    }
+
+    .circle {
+      position: absolute;
+      position-anchor: --circle-anchor;
+      bottom: calc(anchor(top) - 13rem);
+      right: calc(anchor(left) - 13rem);
+      z-index: -1;
+
+      anchor-name: --stari-anchor;
+    }
+
+    .coeurVert {
+      position: absolute;
+      position-anchor: --coeur-anchor;
+      bottom: calc(anchor(bottom) 0rem);
+      left: calc(anchor(left) - 4rem);
+    }
+
+    .stari {
+      position: absolute;
+      position-anchor: --stari-anchor;
+      top: calc(anchor(top) + 2rem);
+      right: calc(anchor(center) - 15rem);
+    }
+  }
+
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 23px 44px;
+    border-radius: 20px;
+    box-shadow: 13px 13px 15px rgb(31, 32, 42, 30%);
+    anchor-name: --grillage2-anchor;
+
+    width: 592px;
+    height: 452px;
+
+    @media (max-width: 1200px) {
+      height: auto;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .grillage2 {
+      position: absolute;
+      position-anchor: --grillage2-anchor;
+      bottom: calc(anchor(top) - 12rem);
+      right: calc(anchor(right) - 5.5rem);
+      z-index: -1;
+    }
+
+    .about__title {
+      margin: 2rem 0;
+      color: var(--col-purple);
+      font-size: 32px;
+    }
+
+    .about__paragraph {
+      margin: 1rem 0;
+      font-size: 16px;
+      font-weight: 400;
+
+      anchor-name: --staros-anchor;
+    }
+
+    .staros {
+      position: absolute;
+      position-anchor: --staros-anchor;
+      bottom: calc(anchor(bottom) - 12rem);
+      left: calc(anchor(center) - 10rem);
+
+      anchor-name: --zigouigoui-anchor;
+    }
+
+    .zigouigoui {
+      position: absolute;
+      min-width: 150px;
+      min-height: 200px;
+      position-anchor: --zigouigoui-anchor;
+      bottom: calc(anchor(bottom) - 10rem);
+      left: calc(anchor(center) + 18rem);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.nosework__card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 13px 13px 15px rgb(31, 32, 42, 30%);
+  padding: 20px;
+  /* max-width: 400px; */
+  /* width: 100%; */
+  /* height: 40vh; */
+  /* min-width: 300px; */
+  margin: auto;
+
+  @media (max-width: 640px) {
+    box-shadow: none;
+    padding: 20px 0;
+    border-radius: 0;
+  }
+
+  .nosework__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .card__header__title {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--col-purple);
+    }
+  }
+
+  .nosework__card__content {
+    font-size: 16px;
+    margin: 59px 0 75px 0;
+    font-weight: 400;
+    padding: 23px 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .boutons__carrousel__container {
+    height: 1rem;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    margin-bottom: -2rem;
+    align-items: center;
+
+    .card__header__nav-icon {
+      background-color: white;
+      border: 0;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .boutons__carrousel {
+      width: 8%;
+      background-color: var(--col-dark-gray);
+      border: none;
+      border-radius: 8px;
+      height: 0.5rem;
+    }
+    .boutons__carrousel--selected {
+      background-color: var(--col-purple);
+    }
+  }
+}
